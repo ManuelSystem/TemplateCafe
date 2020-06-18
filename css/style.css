@@ -45,6 +45,14 @@ img {
   margin: 0;
 }
 /**stiles de header**/
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .site-header {
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
@@ -64,8 +72,30 @@ img {
   font-weight: 700;
 }
 /**Stiles de navegación**/
-.navegacion {
+.navegacion a {
   text-align: center;
   display: block;
   font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .navegacion a {
+    display: inline;
+    margin-right: 2rem;
+  }
+  .navegacion a:last-of-type {
+    margin: 0;
+  }
+}
+.texto-header {
+  color: #fff;
+  text-align: center;
+  margin-left: 5rem;
+}
+@media (min-width: 768px) {
+  .texto-header p {
+    margin-top: 15rem;
+  }
+}
+.texto-header p {
+  font-size: 2.2rem;
 }
