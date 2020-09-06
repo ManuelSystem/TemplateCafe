@@ -49,14 +49,19 @@ img {
 }
 /**grid**/
 @media (min-width: 768px) {
-  .grid{
+  .grid {
     display: flex;
     justify-content: space-between;
   }
-  .columnas-6{
+  .columnas-4 {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+  .columnas-6 {
     flex: 0 0 calc(50% - 1rem);
   }
-  
+  .columnas-8 {
+    flex: 0 0 calc(66.6% - 2rem);
+  }
 }
 /**syles de los botones**/
 .btn {
@@ -191,6 +196,7 @@ img {
   list-style: none;
 }
 .curso {
+  padding-top: 3rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #e1e1e1;
 }
